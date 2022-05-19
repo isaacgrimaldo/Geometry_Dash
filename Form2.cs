@@ -20,7 +20,7 @@ namespace Geometry_Dash
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Maximized;
         }
 
         private void b_Inicio_Juego_Click(object sender, EventArgs e)

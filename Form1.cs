@@ -27,11 +27,6 @@ namespace Geometry_Dash
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void hover_btn_start(object sonder, EventArgs e)
         {
             int btnWidth = btnStart.Width;
@@ -40,14 +35,30 @@ namespace Geometry_Dash
             btnStart.Size = new Size( btnWidth + 10 , btnHeight +10) ;
         }
 
+        private void moveout_btn_start(object sonder, EventArgs e)
+        {
+            int btnWidth = btnStart.Width;
+            int btnHeight = btnStart.Height;
+
+            btnStart.Size = new Size(btnWidth -10 , btnHeight -10 );
+        }
+
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
         }
 
-        private void btnStart_Paint(object sender, PaintEventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.WindowState=FormWindowState.Minimized;
+        }
+
     }
 }
