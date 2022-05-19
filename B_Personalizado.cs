@@ -15,20 +15,36 @@ namespace Geometry_Dash
         private int border_size = 0; // tamaño de borde
         private int border_radius = 48; // borde del radio
         private Color border_colour = Color.PaleVioletRed; // color de borde.
+        private int lvl = 0;
+        private Font fontName = new Font("Pusab", 25);
 
         // constructor
         public B_Personalizado()
         {
+            Color newColor = new Color();
+            newColor = Color.FromArgb(255, 0, 0, 64);
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
-            this.Size = new Size(150, 40);
-            this.BackColor = Color.MediumSlateBlue;
+            this.Size = new Size(400, 120);
+            this.BackColor = newColor;
             this.ForeColor = Color.White;
             this.Resize += new EventHandler(Button_Resize);
-             
+            this.Text = "Press Start";
+            this.Font = fontName;
+           
         }
 
         // metodos.
+
+        public void setLvl (int lvl)
+        {
+            this.lvl = lvl;
+        }
+
+        public int getlvl()
+        {
+            return lvl;
+        }
 
         private void Button_Resize(object sender, EventArgs e)
         {
