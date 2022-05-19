@@ -38,21 +38,24 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(201, 111);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(121, -20);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 100);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(690, 91);
             this.pictureBox2.TabIndex = 2;
@@ -60,12 +63,14 @@
             // 
             // b_personalizado
             // 
+            this.b_personalizado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.b_personalizado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.b_personalizado.FlatAppearance.BorderSize = 0;
             this.b_personalizado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_personalizado.Font = new System.Drawing.Font("Pusab", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_personalizado.ForeColor = System.Drawing.Color.White;
             this.b_personalizado.Location = new System.Drawing.Point(154, 77);
+            this.b_personalizado.Margin = new System.Windows.Forms.Padding(0, 0, 0, 50);
             this.b_personalizado.Name = "b_personalizado";
             this.b_personalizado.Size = new System.Drawing.Size(657, 145);
             this.b_personalizado.TabIndex = 0;

@@ -29,56 +29,111 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.b_start = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnStart = new System.Windows.Forms.PictureBox();
+            this.title = new System.Windows.Forms.Panel();
+            this.btnMin = new System.Windows.Forms.PictureBox();
+            this.bntExit = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnStart)).BeginInit();
+            this.title.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntExit)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // flowLayoutPanel1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(142, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(624, 95);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.flowLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel1.BackgroundImage")));
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(44, 50);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(700, 150);
+            this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // b_start
+            // btnStart
             // 
-            this.b_start.BackColor = System.Drawing.Color.Transparent;
-            this.b_start.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b_start.BackgroundImage")));
-            this.b_start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_start.FlatAppearance.BorderSize = 0;
-            this.b_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_start.Location = new System.Drawing.Point(371, 163);
-            this.b_start.Name = "b_start";
-            this.b_start.Size = new System.Drawing.Size(162, 134);
-            this.b_start.TabIndex = 1;
-            this.b_start.UseVisualStyleBackColor = false;
-            this.b_start.Click += new System.EventHandler(this.b_start_Click);
+            this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.Image = ((System.Drawing.Image)(resources.GetObject("btnStart.Image")));
+            this.btnStart.Location = new System.Drawing.Point(286, 206);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(250, 250);
+            this.btnStart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnStart.TabIndex = 3;
+            this.btnStart.TabStop = false;
+            this.btnStart.Click += new System.EventHandler(this.b_start_Click);
+            this.btnStart.MouseLeave += new System.EventHandler(this.moveout_btn_start);
+            this.btnStart.MouseHover += new System.EventHandler(this.hover_btn_start);
+            // 
+            // title
+            // 
+            this.title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(33)))), ((int)(((byte)(226)))));
+            this.title.Controls.Add(this.btnMin);
+            this.title.Controls.Add(this.bntExit);
+            this.title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.title.Location = new System.Drawing.Point(0, 0);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(807, 40);
+            this.title.TabIndex = 4;
+            // 
+            // btnMin
+            // 
+            this.btnMin.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
+            this.btnMin.Location = new System.Drawing.Point(723, 0);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Size = new System.Drawing.Size(40, 40);
+            this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMin.TabIndex = 2;
+            this.btnMin.TabStop = false;
+            this.btnMin.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // bntExit
+            // 
+            this.bntExit.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bntExit.Image = ((System.Drawing.Image)(resources.GetObject("bntExit.Image")));
+            this.bntExit.Location = new System.Drawing.Point(772, 0);
+            this.bntExit.Margin = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.bntExit.Name = "bntExit";
+            this.bntExit.Size = new System.Drawing.Size(40, 40);
+            this.bntExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.bntExit.TabIndex = 0;
+            this.bntExit.TabStop = false;
+            this.bntExit.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(912, 437);
-            this.Controls.Add(this.b_start);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(807, 461);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnStart)).EndInit();
+            this.title.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntExit)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button b_start;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox btnStart;
+        private System.Windows.Forms.Panel title;
+        private System.Windows.Forms.PictureBox btnMin;
+        private System.Windows.Forms.PictureBox bntExit;
     }
 }
 
